@@ -108,7 +108,7 @@ def sync_jobs_with_gengo
 end
 
 def build_jobs
-  jobs = GENGO_LANGUAGES.map{ |language| build_job_for_language(language) }
+  jobs = LANGUAGES.map{ |language| build_job_for_language(language) }
   jobs.compact
 end
 
@@ -135,3 +135,6 @@ def view_orders
     puts resp["response"]["order"]
   end
 end
+
+
+
